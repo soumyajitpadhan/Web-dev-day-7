@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: repeat(1, 350px);
+}
+
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #02026F;
+}
+
+
+.right {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #3140AF;
+}
+
+.right ul li {
+    margin: 17px 0px;
+    list-style: none;
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+#sizebig {
+    font-size: 20px;
+}
+
+/* Footer Section */
+
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 25px;
+    color: white;
+    align-items: center;
+}
+
+.left-fot {
+    display: flex;
+    gap: 20px;
+}
+
+.left-fot p {
+    font-size: 15px;
+}
+
+.left-fot img {
+    width: 20px;
+}
+
+.right-fot ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+
+}
+
+.right-fot ul li a {
+    color: white;
+    font-size: 12px;
+}
+
+#tdn {
+    text-decoration: none;
+}
+
+/* Media queries */
+
+@media screen and (max-width:460px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .right {
+        order: 1;
+        flex-direction: column;
+    }
+
+    .left {
+        order: 2;
+    }
+
+    .footer-section {
+        flex-direction: column;
+    }
+
+    .right ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right-fot ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left img {
+        padding: 25px;
+    }
+
+}
+
+@media screen and (min-width:461px) and (max-width:1000px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .right {
+        order: 1;
+    }
+
+    .left {
+        order: 2;
+    }
+
+    .left img {
+        padding: 25px;
+    }
+
+}

@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 270px);
+    /* border: 2px solid black; */
+    box-shadow: rgba(169, 168, 168, 0.24) 0px 5px 8px;
+    padding: 25px;
+    gap: 18px;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: 900;
+    text-align: center;
+    color: rgb(33, 33, 33);
+    margin: 10px 0px;
+}
+
+.fa-solid {
+    width: 70px;
+    color: #FC2779;
+}
+
+.container div {
+    /* border: 2px solid red; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.bimg {
+    width: 275px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.container p {
+    border: 1px dashed rgb(252, 39, 121);
+    align-self: flex-end;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 12px 15px;
+    margin-right: 12px;
+    border-radius: 10px;
+    color: rgb(252, 39, 121);
+    background-color: #FEE9F1;
+    cursor: pointer;
+}
+
+.simg {
+    width: 15px;
+    margin-left: 10px;
+}
+
+/* Media Queries */
+@media screen and (max-width:450px) {
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        padding: 10px;
+    }
+
+    .container p {
+        align-self: center;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .bimg {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width:451px) and (max-width:760px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+
+    }
+
+    .bimg {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:761px) and (max-width:1200px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+
+    }
+
+    .bimg {
+        width: 100%;
+    }
+}
