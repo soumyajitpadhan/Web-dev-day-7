@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+.container {
+    max-width: 1440px;
+    margin-inline: auto;
+    /* overflow: hidden; */
+}
+
+/* Navbar section */
+.nav-section {
+    justify-content: space-between;
+    /* border: 2px solid black; */
+    align-items: center;
+    height: 88px;
+}
+
+.img-cont img {
+    width: 150px;
+}
+
+.lists-cont ul {
+    align-items: center;
+    gap: 30px;
+}
+
+.lists-cont ul li {
+    list-style: none;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #0A0103;
+}
+
+.lists-cont ul li:last-child {
+    border: 1px solid #ED0331;
+    background-color: white;
+    color: #ED0331;
+    padding: 12px 15px;
+    border-radius: 5px;
+}
+
+/* Text section */
+.text-section {
+    height: 308px;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.text-section h1 {
+    /* border: 2px solid blue; */
+    width: 1280px;
+    height: 62px;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 62px;
+    text-align: center;
+    color: #0A0103;
+}
+
+.text-section p {
+    /* border: 2px solid red; */
+    width: 980px;
+    height: 68px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #21191B;
+    line-height: 34px;
+    text-align: center;
+}
+
+/* Input section */
+.input-cont {
+    height: 776px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.text-field {
+    flex-direction: column;
+    gap: 30px;
+}
+
+.text-field div:first-child {
+    width: 584px;
+    height: 80px;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #0A0103;
+}
+
+.text-field div:last-child {
+    width: 498px;
+    height: 272px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 75px;
+    color: #544D4F;
+}
+
+.input-box {
+    flex-direction: column;
+    width: 515px;
+    height: 685px;
+    border-radius: 16px;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    /* box-shadow: 0px 4px 6px -2px #0000000D;
+    box-shadow: 0px 10px 15px -3px #0000001A;
+    box-shadow: 0px -2px 11px -2px #0000001A; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+.input-box h3 {
+    width: 451px;
+    height: 70px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center;
+    align-content: center;
+}
+
+.input-box div {
+    width: 451px;
+    height: 78px;
+}
+
+.input-box input {
+    width: 451px;
+    height: 48px;
+    border-radius: 8px;
+    border: 1px solid #CCCCCC;
+    background-color: #FFFFFF;
+    padding: 12px;
+}
+
+.input-box div label {
+    width: 67px;
+    height: 24px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #21191B;
+}
+
+#robot {
+    width: 16px;
+    cursor: pointer;
+}
+
+#center-div {
+    width: 201px;
+    height: 68px;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
+    border: 1px solid #CECCCD;
+    border-radius: 10px;
+}
+
+#center-div p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.input-box button {
+    width: 451px;
+    height: 48px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ED0331;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+/* Roles */
+.role {
+    height: 406px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.role-text {
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #0A0103;
+}
+
+.course {
+    width: 402px;
+    height: 40px;
+}
+
+.course p {
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+.course p:nth-child(2) {
+    border-bottom: 2px solid red;
+}
+
+.designation {
+    width: 700px;
+    height: 96px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.designation p {
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #6E71CC;
+    border-radius: 5px;
+    background-color: #f1f1ff;
+}
+
+/* Hire */
+.hire {
+    height: 607px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.hire-text {
+    width: 551px;
+    height: 39px;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
+    color: #0A0103;
+}
+
+.hire-cont {
+    width: 1272px;
+    height: 339px;
+    border-radius: 32px;
+    background-color: #F6EDE7;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.hire-btn {
+    width: 239px;
+    height: 55px;
+    border-radius: 8px;
+    background-color: #ED0331;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* Footer */
+.foot {
+    height: 392px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #0A0103;
+    color: #CECCCD;
+}
+
+.foot-social-media {
+    width: 1280px;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(56, 55, 55);
+}
+
+.foot-image img {
+    width: 150px;
+}
+
+.social-media-logo {
+    width: 321px;
+    height: 24px;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+}
+
+.foot-lists-campus {
+    width: 1280px;
+    justify-content: space-between;
+}
+
+.foot-lists {
+    width: 826px;
+    height: 144px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 200px;
+    cursor: pointer;
+}
+
+.foot-lists div p {
+    margin: 15px 0px;
+}
+
+.foot-campus {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.campus-text {
+    width: 147px;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+}
+
+.campus-text span {
+    color: red;
+}
+
+.campus-image img {
+    width: 72px;
+    height: 72px;
+}
+
+.campus-image p {
+    width: 67px;
+    height: 22px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: center;
+}
